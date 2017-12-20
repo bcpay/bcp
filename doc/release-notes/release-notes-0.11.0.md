@@ -1,13 +1,8 @@
-Bitcoin Core version 0.11.0 is now available from:
 
-  <https://bitcoin.org/bin/bitcoin-core-0.11.0/>
 
 This is a new major version release, bringing both new features and
 bug fixes.
 
-Please report bugs using the issue tracker at github:
-
-  <https://github.com/bitcoin/bitcoin/issues>
 
 Upgrading and downgrading
 =========================
@@ -25,7 +20,7 @@ Downgrade warning
 
 Because release 0.10.0 and later makes use of headers-first synchronization and
 parallel block download (see further), the block files and databases are not
-backwards-compatible with pre-0.10 versions of Bitcoin Core or other software:
+backwards-compatible with pre-0.10 versions of bcpay or other software:
 
 * Blocks will be stored on disk out of order (in the order they are
 received, really), which makes it incompatible with some tools or
@@ -86,7 +81,7 @@ related to the blockchain in the bitcoin system: the raw blocks as received over
 the network (blk???.dat), the undo data (rev???.dat), the block index and the 
 UTXO set (both LevelDB databases). The databases are built from the raw data.
 
-Block pruning allows Bitcoin Core to delete the raw block and undo data once 
+Block pruning allows bcpay to delete the raw block and undo data once 
 it's been validated and used to build the databases. At that point, the raw data 
 is used only to relay blocks to other nodes, to handle reorganizations, to look 
 up old transactions (if -txindex is enabled or via the RPC/REST interfaces), or 
@@ -95,7 +90,7 @@ all blocks in the blockchain.
 
 The user specifies how much space to allot for block & undo files. The minimum 
 allowed is 550MB. Note that this is in addition to whatever is required for the 
-block index and UTXO databases. The minimum was chosen so that Bitcoin Core will 
+block index and UTXO databases. The minimum was chosen so that bcpay will 
 be able to maintain at least 288 blocks on disk (two days worth of blocks at 10 
 minutes per block). In rare instances it is possible that the amount of space 
 used will exceed the pruning target in order to keep the required last 288 
@@ -496,10 +491,3 @@ Thanks to everyone who directly contributed to this release:
 - UdjinM6
 - Vitalii Demianets
 - Wladimir J. van der Laan
-
-And all those who contributed additional code review and/or security research:
-
-- Sergio Demian Lerner
-
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bitcoin/).
-

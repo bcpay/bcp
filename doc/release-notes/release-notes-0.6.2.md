@@ -1,10 +1,6 @@
-Bitcoin version 0.6.2 is now available for download at:
-http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.6.2/
 
 This is a bug-fix and code-cleanup release, with no major new features.
 
-Please report bugs using the github issue tracker at:
-https://github.com/bitcoin/bitcoin/issues
 
 
 NOTABLE CHANGES
@@ -13,9 +9,6 @@ Much faster shutdowns. However, the blkindex.dat file is no longer
 portable to different data directories by default. If you need a
 portable blkindex.dat file then run with the new -detachdb=1 option
 or the "Detach databases at shutdown" GUI preference.
-
-Fixed https://github.com/bitcoin/bitcoin/issues/1065, a bug that
-could cause long-running nodes to crash.
 
 Mac and Windows binaries are compiled against OpenSSL 1.0.1b (Linux
 binaries are dynamically linked to the version of OpenSSL on the system).

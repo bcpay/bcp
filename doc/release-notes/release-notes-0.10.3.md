@@ -1,13 +1,7 @@
-Bitcoin Core version 0.10.3 is now available from:
-
-  <https://bitcoin.org/bin/bitcoin-core-0.10.3/>
 
 This is a new minor version release, bringing security fixes and translation 
 updates. It is recommended to upgrade to this version as soon as possible.
 
-Please report bugs using the issue tracker at github:
-
-  <https://github.com/bitcoin/bitcoin/issues>
 
 Upgrading and downgrading
 =========================
@@ -25,7 +19,7 @@ Downgrade warning
 
 Because release 0.10.0 and later makes use of headers-first synchronization and
 parallel block download (see further), the block files and databases are not
-backwards-compatible with pre-0.10 versions of Bitcoin Core or other software:
+backwards-compatible with pre-0.10 versions of bcpay or other software:
 
 * Blocks will be stored on disk out of order (in the order they are
 received, really), which makes it incompatible with some tools or
@@ -51,8 +45,6 @@ Fix buffer overflow in bundled upnp
 
 Bundled miniupnpc was updated to 1.9.20151008. This fixes a buffer overflow in
 the XML parser during initial network discovery.
-
-Details can be found here: http://talosintel.com/reports/TALOS-2015-0035/
 
 This applies to the distributed executables only, not when building from source or
 using distribution provided packages.
@@ -82,7 +74,7 @@ permitted. Even BIP62 did not propose applying this rule to
 old version transactions, but conforming implementations have become
 much more common since BIP62 was initially written.
 
-Bitcoin Core has produced compatible signatures since a28fb70e in
+bcpay has produced compatible signatures since a28fb70e in
 September 2013, but this didn't make it into a release until 0.9
 in March 2014; Bitcoinj has done so for a similar span of time.
 Bitcoinjs and electrum have been more recently updated.
@@ -92,9 +84,6 @@ still cooperate to break transactions.  Nor does it replace the
 need for wallet software to handle malleability sanely[1]. This
 only eliminates the cheap and irritating DOS attack.
 
-[1] On the Malleability of Bitcoin Transactions
-Marcin Andrychowicz, Stefan Dziembowski, Daniel Malinowski, Łukasz Mazurek
-http://fc15.ifca.ai/preproceedings/bitcoin/paper_9.pdf
 
 Minimum relay fee default increase
 -----------------------------------
@@ -161,5 +150,3 @@ And all those who contributed additional code review and/or security research:
 
 - timothy on IRC for reporting the issue
 - Vulnerability in miniupnp discovered by Aleksandar Nikolic of Cisco Talos
-
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bitcoin/).

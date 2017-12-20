@@ -1,17 +1,8 @@
-Bitcoin Core version 0.13.0 is now available from:
 
-  <https://bitcoin.org/bin/bitcoin-core-0.13.0/>
 
 This is a new major version release, including new features, various bugfixes
 and performance improvements, as well as updated translations.
 
-Please report bugs using the issue tracker at github:
-
-  <https://github.com/bitcoin/bitcoin/issues>
-
-To receive security and update notifications, please subscribe to:
-
-  <https://bitcoincore.org/en/list/announcements/join/>
 
 Compatibility
 ==============
@@ -21,8 +12,8 @@ an OS initially released in 2001. This means that not even critical security
 updates will be released anymore. Without security updates, using a bitcoin
 wallet on a XP machine is irresponsible at least.
 
-In addition to that, with 0.12.x there have been varied reports of Bitcoin Core
-randomly crashing on Windows XP. It is [not clear](https://github.com/bitcoin/bitcoin/issues/7681#issuecomment-217439891)
+In addition to that, with 0.12.x there have been varied reports of bcpay
+randomly crashing on Windows XP. It is 
 what the source of these crashes is, but it is likely that upstream
 libraries such as Qt are no longer being tested on XP.
 
@@ -76,7 +67,7 @@ table by any user on the system.
 C++11 and Python 3
 ------------------
 
-Various code modernizations have been done. The Bitcoin Core code base has
+Various code modernizations have been done. The bcpay code base has
 started using C++11. This means that a C++11-capable compiler is now needed for
 building. Effectively this means GCC 4.7 or higher, or Clang 3.3 or higher.
 
@@ -156,9 +147,8 @@ You can't disable HD key generation once you have created a HD wallet.
 
 There is no distinction between internal (change) and external keys.
 
-HD wallets are incompatible with older versions of Bitcoin Core.
+HD wallets are incompatible with older versions of bcpay.
 
-[Pull request](https://github.com/bitcoin/bitcoin/pull/8035/files), [BIP 32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)
 
 
 Segregated Witness
@@ -172,7 +162,7 @@ The code preparations for Segregated Witness ("segwit"), as described in [BIP
 finished and included in this release.  However, BIP 141 does not yet specify
 activation parameters on mainnet, and so this release does not support segwit
 use on mainnet.  Testnet use is supported, and after BIP 141 is updated with
-proposed parameters, a future release of Bitcoin Core is expected that
+proposed parameters, a future release of bcpay is expected that
 implements those parameters for mainnet.
 
 Furthermore, because segwit activation is not yet specified for mainnet,
@@ -325,12 +315,6 @@ Low-level RPC changes
 
 - Asm script outputs replacements for OP_NOP2 and OP_NOP3
 
-  - OP_NOP2 has been renamed to OP_CHECKLOCKTIMEVERIFY by [BIP 
-65](https://github.com/bitcoin/bips/blob/master/bip-0065.mediawiki)
-
-  - OP_NOP3 has been renamed to OP_CHECKSEQUENCEVERIFY by [BIP 
-112](https://github.com/bitcoin/bips/blob/master/bip-0112.mediawiki)
-
   - The following outputs are affected by this change:
 
     - RPC `getrawtransaction` (in verbose mode)
@@ -350,15 +334,6 @@ Low-level RPC changes
 
 - New options were added to `fundrawtransaction`: `includeWatching`, `changeAddress`, `changePosition` and `feeRate`.
 
-
-Low-level ZMQ changes
-----------------------
-
-- Each ZMQ notification now contains an up-counting sequence number that allows
-  listeners to detect lost notifications.
-  The sequence number is always the last element in a multi-part ZMQ notification and
-  therefore backward compatible. Each message type has its own counter.
-  PR [#7762](https://github.com/bitcoin/bitcoin/pull/7762).
 
 
 0.13.0 Change log
@@ -865,4 +840,3 @@ Thanks to everyone who directly contributed to this release:
 - Wladimir J. van der Laan
 - Yuri Zhykin
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bitcoin/).

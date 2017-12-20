@@ -1,14 +1,12 @@
-Bitcoin Core version 0.9.3 is now available from:
 
-  https://bitcoin.org/bin/0.9.3/
 
 This is a new minor version release, bringing only bug fixes and updated
 translations. Upgrading to this release is recommended.
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/bitcoin/bitcoin/issues
-
+  https://github.com/bcpay/bcp
+  
 Upgrading and downgrading
 ==========================
 
@@ -70,7 +68,7 @@ GUI:
 Miscellaneous:
 - key.cpp: fail with a friendlier message on missing ssl EC support
 - Remove bignum dependency for scripts
-- Upgrade OpenSSL to 1.0.1i (see https://www.openssl.org/news/secadv_20140806.txt - just to be sure, no critical issues for Bitcoin Core)
+- Upgrade OpenSSL to 1.0.1i (see https://www.openssl.org/news/secadv_20140806.txt - just to be sure, no critical issues for bcpay)
 - Upgrade miniupnpc to 1.9.20140701
 - Fix boost detection in build system on some platforms
 
@@ -97,5 +95,3 @@ Thanks to everyone who contributed to this release:
 - Warren Togami
 - Wladimir J. van der Laan
 - Zak Wilcox
-
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bitcoin/).
