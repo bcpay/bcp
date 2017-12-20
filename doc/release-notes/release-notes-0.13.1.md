@@ -1,18 +1,7 @@
-Bitcoin Core version 0.13.1 is now available from:
-
-  <https://bitcoin.org/bin/bitcoin-core-0.13.1/>
 
 This is a new minor version release, including activation parameters for the
 segwit softfork, various bugfixes and performance improvements, as well as
 updated translations.
-
-Please report bugs using the issue tracker at github:
-
-  <https://github.com/bitcoin/bitcoin/issues>
-
-To receive security and update notifications, please subscribe to:
-
-  <https://bitcoincore.org/en/list/announcements/join/>
 
 Compatibility
 ==============
@@ -22,8 +11,8 @@ an OS initially released in 2001. This means that not even critical security
 updates will be released anymore. Without security updates, using a bitcoin
 wallet on a XP machine is irresponsible at least.
 
-In addition to that, with 0.12.x there have been varied reports of Bitcoin Core
-randomly crashing on Windows XP. It is [not clear](https://github.com/bitcoin/bitcoin/issues/7681#issuecomment-217439891)
+In addition to that, with 0.12.x there have been varied reports of bcpay
+randomly crashing on Windows XP. It is [not clear]
 what the source of these crashes is, but it is likely that upstream
 libraries such as Qt are no longer being tested on XP.
 
@@ -131,13 +120,13 @@ covered by the txid. This provides several immediate benefits:
   (specifically, the segregated witnesses) while still ensuring that the node
   can build an accurate copy of the UTXO set for the block chain with the most
   proof of work.  Segwit enables this capability at the consensus layer, but
-  note that Bitcoin Core does not provide an option to use this capability as
+  note that bcpay does not provide an option to use this capability as
   of this 0.13.1 release.
 
 - **Script versioning:** Segwit makes it easy for future soft forks to allow
   Bitcoin users to individually opt-in to almost any change in the Bitcoin
   Script language when those users receive new transactions.  Features
-  currently being researched by Bitcoin Core contributors that may use this
+  currently being researched by bcpay contributors that may use this
   capability include support for Schnorr signatures, which can improve the
   privacy and efficiency of multisig transactions (or transactions with
   multiple inputs), and Merklized Abstract Syntax Trees (MAST), which can
@@ -153,19 +142,6 @@ first retarget period after segwit's start date of 15 November 2016.  If
 signal support for segwit, the soft fork will be locked in.  After
 another 2,016 blocks, segwit will activate.
 
-For more information about segwit, please see the [segwit FAQ][], the
-[segwit wallet developers guide][] or BIPs [141][BIP141], [143][BIP143],
-[144][BIP144], and [145][BIP145].  If you're a miner or mining pool
-operator, please see the [versionbits FAQ][] for information about
-signaling support for a soft fork.
-
-[Segwit FAQ]: https://bitcoincore.org/en/2016/01/26/segwit-benefits/
-[segwit wallet developers guide]: https://bitcoincore.org/en/segwit_wallet_dev/
-[BIP141]: https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki
-[BIP143]: https://github.com/bitcoin/bips/blob/master/bip-0143.mediawiki
-[BIP144]: https://github.com/bitcoin/bips/blob/master/bip-0144.mediawiki
-[BIP145]: https://github.com/bitcoin/bips/blob/master/bip-0145.mediawiki
-[versionbits FAQ]: https://bitcoincore.org/en/2016/06/08/version-bits-miners-faq/
 
 
 Null dummy soft fork
@@ -183,7 +159,7 @@ a third-party to insert data into other people's transactions, changing
 the transaction's txid (called transaction malleability) and possibly
 causing other problems.
 
-Since Bitcoin Core 0.10.0, nodes have defaulted to only relaying and
+Since bcpay 0.10.0, nodes have defaulted to only relaying and
 mining transactions whose dummy element was a null value (0x00, also
 called OP_0).  The null dummy soft fork turns this relay rule into a
 consensus rule both for non-segwit transactions and segwit transactions,
@@ -407,4 +383,3 @@ Thanks to everyone who directly contributed to this release:
 - whythat
 - Wladimir J. van der Laan
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bitcoin/).

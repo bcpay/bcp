@@ -1,12 +1,10 @@
-Bitcoin-Qt version 0.8.6 final is now available from:
 
-  http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.8.6/
 
 This is a maintenance release to fix a critical bug; we urge all users to upgrade.
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/bitcoin/bitcoin/issues
+  https://github.com/bcpay/bcp
 
 How to Upgrade
 --------------
@@ -26,14 +24,6 @@ your machine.
 0.8.6 Release notes
 ===================
 
-- Default block size increase for miners.
-  (see https://gist.github.com/gavinandresen/7670433#086-accept-into-block)
-
-- Remove the all-outputs-must-be-greater-than-CENT-to-qualify-as-free rule for relaying
-  (see https://gist.github.com/gavinandresen/7670433#086-relaying)
-
-- Lower maximum size for free transaction creation
-  (see https://gist.github.com/gavinandresen/7670433#086-wallet)
 
 - OSX block chain database corruption fixes
   - Update leveldb to 1.13
@@ -63,4 +53,3 @@ Warning
   Hence it is recommended to use a 64-bit executable if possible.
   A 64-bit executable for Windows is planned for 0.9.
 
-Note: Gavin Andresen's GPG signing key for SHA256SUMS.asc has been changed from  key id 1FC730C1 to sub key 7BF6E212 (see https://github.com/bitcoin/bitcoin.org/pull/279).

@@ -1,21 +1,3 @@
-Bitcoin Core version *0.15.1* is now available from:
-
-  <https://bitcoincore.org/bin/bitcoin-core-0.15.1/>
-
-or
-
-  <https://bitcoin.org/bin/bitcoin-core-0.15.1/>
-
-This is a new minor version release, including various bugfixes and
-performance improvements, as well as updated translations.
-
-Please report bugs using the issue tracker at GitHub:
-
-  <https://github.com/bitcoin/bitcoin/issues>
-
-To receive security and update notifications, please subscribe to:
-
-  <https://bitcoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -52,10 +34,10 @@ processing the entire blockchain.
 Compatibility
 ==============
 
-Bitcoin Core is extensively tested on multiple operating systems using
+bcpay is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later. Windows XP is not supported.
 
-Bitcoin Core should also work on most other Unix-like systems but is not
+bcpay should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 
@@ -65,7 +47,7 @@ Notable changes
 Network fork safety enhancements
 --------------------------------
 
-A number of changes to the way Bitcoin Core deals with peer connections and invalid blocks
+A number of changes to the way bcpay deals with peer connections and invalid blocks
 have been made, as a safety precaution against blockchain forks and misbehaving peers.
 
 - Unrequested blocks with less work than the minimum-chain-work are now no longer processed even

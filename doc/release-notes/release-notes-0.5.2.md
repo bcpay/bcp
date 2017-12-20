@@ -1,14 +1,9 @@
-Bitcoin version 0.5.2 is now available for download at:
-http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.5.2/
+
 
 This is a bugfix-only release based on 0.5.1.
 
 Please report bugs using the issue tracker at github:
-https://github.com/bitcoin/bitcoin/issues
-
-Stable source code is hosted at Gitorious:
-http://gitorious.org/bitcoin/bitcoind-stable/archive-tarball/v0.5.2#.tar.gz
-
+https://github.com/bcpay/bcp
 BUG FIXES
 
 Check all transactions in blocks after the last checkpoint (0.5.0 and 0.5.1 skipped checking ECDSA signatures during initial blockchain download).

@@ -1,12 +1,9 @@
-Bitcoin-Qt version 0.8.5 is now available from:
-  http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.8.5/
 
 This is a maintenance release to fix a critical bug;
 we urge all users to upgrade.
 
 Please report bugs using the issue tracker at github:
-  https://github.com/bitcoin/bitcoin/issues
-
+  https://github.com/bcpay/bcp
 
 How to Upgrade
 --------------

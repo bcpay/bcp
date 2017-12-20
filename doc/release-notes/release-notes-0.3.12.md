@@ -9,5 +9,3 @@ Features:
 If you have json-rpc code that checks the contents of the error string, you need to change it to expect error objects of the form {"code":<number>,"message":<string>}, which is the standard.  See this thread:
 http://www.bitcoin.org/smf/index.php?topic=969.0
 
-Download:
-http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.12/
