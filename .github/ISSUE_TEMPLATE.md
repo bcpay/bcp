@@ -2,14 +2,6 @@
 
 This issue tracker is only for technical issues related to bcpay.
 
-### Describe the issue
-
-### Can you reliably reproduce the issue?
-#### If so, please list the steps to reproduce below:
-1.
-2.
-3.
-
 ### Expected behaviour
 Tell us what should happen
 
