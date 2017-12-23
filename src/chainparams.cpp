@@ -111,12 +111,13 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0xf9;
-        pchMessageStart[1] = 0xbe;
-        pchMessageStart[2] = 0xb4;
-        pchMessageStart[3] = 0xd9;
+        pchMessageStart[0] = 0xf6;
+        pchMessageStart[1] = 0xbd;
+        pchMessageStart[2] = 0xc5;
+        pchMessageStart[3] = 0xe3;
         nDefaultPort = 8633;
         nPruneAfterHeight = 100000;
+        
 
         genesis = CreateGenesisBlock(1231006505, 2083236893, 0x1d00ffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
