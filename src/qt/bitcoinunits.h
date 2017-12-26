@@ -52,13 +52,14 @@ public:
     explicit BitcoinUnits(QObject *parent);
 
     /** Bitcoin units.
-      @note Source: https://en.bitcoin.it/wiki/Units . Please add only sensible ones
+     *  Bitcoin units(Bitcoin payment performance work the same as Bitcoin).
+     * @note Source: https://en.bitcoin.it/wiki/Units . Please add only sensible ones
      */
     enum Unit
     {
-        BTC,
-        mBTC,
-        uBTC
+        BPP,
+        mBPP,
+        uBPP
     };
 
     enum SeparatorStyle
