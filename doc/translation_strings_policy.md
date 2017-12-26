@@ -1,7 +1,7 @@
 Translation Strings Policy
 ===========================
 
-This document provides guidelines for internationalization of the bcpay Core software.
+This document provides guidelines for internationalization of the bppay software.
 
 How to translate?
 ------------------

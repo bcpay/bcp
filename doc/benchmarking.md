@@ -1,7 +1,7 @@
 Benchmarking
 ============
 
-bcpay has an internal benchmarking framework, with benchmarks
+bppay has an internal benchmarking framework, with benchmarks
 for cryptographic algorithms such as SHA1, SHA256, SHA512 and RIPEMD160. As well as the rolling bloom filter.
 
 After compiling bcpay, the benchmarks can be run with:

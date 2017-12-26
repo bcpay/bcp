@@ -1,9 +1,9 @@
-bcpay
+Bitcoin Payment Performance
 =============
 
 Setup
 ---------------------
-bcpay is the original bcpay client and it builds the backbone of the network. It downloads and, by default, stores the entire history of bcpay transactions (which is currently more than 100 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+Bitcoin Payment Performance is the original Bitcoin client and it builds the backbone of the network. It downloads and, by default, stores the entire history of bcpay transactions (which is currently more than 100 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
 To download bcpay, visit [bcpaycore.org](https://bcpay.org).
 
@@ -15,8 +15,8 @@ The following are some helpful notes on how to run bcpay on your native platform
 
 Unpack the files into a directory and run:
 
-- `bin/bcpay-qt` (GUI) or
-- `bin/bcpayd` (headless)
+- `bin/bitcoin-qt` (GUI) or
+- `bin/bitcoind` (headless)
 
 ### Windows
 
@@ -24,7 +24,7 @@ Unpack the files into a directory, and then run bitcoin-qt.exe.
 
 ### OS X
 
-Drag bcpay to your applications folder, and then run bcpay-Core.
+Drag bitcoin-core to your applications folder, and then run bitcoin-Core.
 
 Building
 ---------------------
@@ -38,7 +38,7 @@ The following are developer notes on how to build bcpay on your native platform.
 
 Development
 ---------------------
-The bcpay repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The bpp repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Release Notes](release-notes.md)
